@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/webApp.js"></script>
+
+    <head>
+        <title>Fagron Tech</title>
+
+        <div id="headUI">
+            <h2>Clientes Fagron</h2>
+        </div>
+    </head>
+
+    <body>
+        <div id="formOverlay" class="overlay">
+            <span class="closeButton" onclick="closeForm()" title="Fechar Formulário"> &#215 </span>
+            <div class="wrap">
+                <h2 id="formText"> Cadastrar novo cliente</h2>
+                <form id="addForm">
+                    <input type="text" name="name" placeholder="Digite o nome">
+                    <input type="text" name="lastName" placeholder="Digite o sobrenome">
+                    <input type="text" name="cpf" placeholder="Digite o CPF">
+                    <input type="date" name="bday" placeholder="Digite a data de nascimento">
+                    <select name="prof">
+                        <option value="none">Selecione uma profissão</option>
+                        <option value="programmer">Programador</option>
+                        <option value="analist">Analista</option>
+                        <option value="manager">Gerente</option>
+                        <option value="intern">Estagiário </option>
+                        <option value="qa">QA</option>
+                    </select>
+                    <input style="margin-top: 5px" type="submit" value="Salvar" onclick="clearForm()">
+                </form>
+            </div>
+        </div>
+
+        <div id="clientListDiv">
+
+            <h2 id="listText">Lista de clientes cadastrados</h2>
+
+            <button class="newClient button" onclick="openForm()"> Cadastrar novo cliente </button>
+
+            <table id="clientsTable">
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>CPF</th>
+                    <th>Data de nascimento</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+                <tr>
+                    <td>Henrique</td>
+                    <td>De Abreu</td>
+                    <td>123.456.789-10</td>
+                    <td>29/12/1998</td>
+                    <td>20</td>
+                    <td>Não informada</td>
+                </tr>
+                <tr>
+                    <td>Matheus</td>
+                    <td>Faria</td>
+                    <td>125.458.950-02</td>
+                    <td>25/06/1985</td>
+                    <td>34</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Jhonatan</td>
+                    <td>Lemos</td>
+                    <td>894.568.741-98</td>
+                    <td>04/05/1980</td>
+                    <td>39</td>
+                    <td>QA</td>
+                </tr>
+                <tr>
+                    <td>Gabriel</td>
+                    <td>Matias</td>
+                    <td>654.523.569-32</td>
+                    <td>15/03/1992</td>
+                    <td>27</td>
+                    <td>Analista</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

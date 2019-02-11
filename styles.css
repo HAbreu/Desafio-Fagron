@@ -1,0 +1,154 @@
+﻿
+body {
+    background-color: white;
+    margin: 0;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.wrap {
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    background: #ff0000;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.newClient { /*Button to create a new client*/
+    background-color: #ff0000; /*Red*/
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    float: right;
+    margin-right: 10%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #ff0000;
+}
+    .button:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+}
+    .closeButton:hover {
+        color: gray;
+    }
+
+#listText {
+    margin-top: 2%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+#obs {
+    margin-left: 5%;
+    display: inherit;
+}
+
+#formText {
+    text-align: center;
+    color: #ffffff;
+}
+
+#headUI {
+    background-color: #ff0000;
+    color: white;
+    padding: .15px;
+    text-align: center;
+}
+
+#clientsTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+    #clientsTable td, #clientsTable th {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    #clientsTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #clientsTable tr:hover {
+        background-color: #ddd;
+    }
+
+    #clientsTable td:hover {
+        cursor: pointer;
+    }
+
+    #clientsTable th {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        background-color: #ff0000;
+        color: white;
+    }
